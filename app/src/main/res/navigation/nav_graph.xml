@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentUno">
+
+    <fragment
+        android:id="@+id/fragmentUno"
+        android:name="com.rocio.poma.practica11_componente_listview.FragmentUno"
+        android:label="fragment_uno"
+        tools:layout="@layout/fragment_uno" >
+        <action
+            android:id="@+id/siguiente_ventana"
+            app:destination="@id/fragmentDos" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDos"
+        android:name="com.rocio.poma.practica11_componente_listview.FragmentDos"
+        android:label="fragment_dos"
+        tools:layout="@layout/fragment_dos" />
+</navigation>
